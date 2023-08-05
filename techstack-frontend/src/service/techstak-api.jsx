@@ -18,8 +18,13 @@ export async function GetFileContent(file, setFileData) {
   }
 }
 
-export async function GetAllData(setFileData) {
+export async function GetAllFilesData(setAllFileData) {
   const res = await fetch(`http://localhost:3100/files/data`);
-  const data = await res.json();
-  setFileData(data);
+  if (res.status === 200) {
+    const data = await res.json();
+    //var linesCount = Object.keys(data.lines).length;
+    setAllFileData(data);
+  } else {
+    setAllFileData(null);
+  }
 }

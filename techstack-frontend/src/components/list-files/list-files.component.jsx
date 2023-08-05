@@ -22,6 +22,10 @@ function ListFiles() {
 
   return (
     <Container>
+      <div className="titulo-list-files">
+        <h2>List all files </h2> <span>(Pick a file to view its content) </span>
+      </div>
+
       {!files || files.length === 0 ? (
         <Spinner animation="border" role="status" className="loading" />
       ) : (

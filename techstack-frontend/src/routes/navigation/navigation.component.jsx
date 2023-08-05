@@ -22,7 +22,8 @@ const Navigation = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="home">Home</Nav.Link>
-              <Nav.Link href="listFiles">Files</Nav.Link>
+              <Nav.Link href="allFiles">All Files</Nav.Link>
+              <Nav.Link href="listFiles">Check one File</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

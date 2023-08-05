@@ -1,0 +1,22 @@
+.title-file {
+  width: 100%;
+  display: "inline" !important;
+  display: -moz-inline-stack !important;
+  display: inline-block !important;
+  *display: inline !important;
+
+  h3 {
+    display: "inline" !important;
+    display: -moz-inline-stack !important;
+    display: inline-block !important;
+    *display: inline !important;
+    margin-block-end: 0px;
+  }
+  span {
+    display: "inline" !important;
+    display: -moz-inline-stack !important;
+    display: inline-block !important;
+    *display: inline !important;
+    font-size: 0.8rem;
+  }
+}

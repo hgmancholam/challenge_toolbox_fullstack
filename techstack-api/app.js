@@ -112,18 +112,19 @@ app.get("/files/data", async (req, res) => {
                 //}
               })
               .filter(({ text, number, hex }) => !!(text && number && hex));
+
             return { file, lines };
-            //return validLines;
           } catch (error) {
-            console.error(
-              `Error downloading or processing ${file}:`,
-              error.message
-            );
-            return null;
+            //console.error(`Error downloading or processing ${file}:`, error.message );
+            return { file: "", lines: [] };
           }
         })
       );
-      res.status(200).json(allFilesContent);
+
+      const nonEmptyFilesContent = allFilesContent.filter(
+        (item) => item.lines.length > 0
+      );
+      res.status(200).json(nonEmptyFilesContent);
     } else {
       res.status(400).json({
         error: "Ocurrió un error obteniendo la lista de archivos",

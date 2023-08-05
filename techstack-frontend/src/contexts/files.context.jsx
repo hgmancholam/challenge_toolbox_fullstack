@@ -1,5 +1,9 @@
 import { createContext, useState, useEffect } from "react";
-import { GetListFiles, GetFileContent } from "../service/techstak-api";
+import {
+  GetListFiles,
+  GetFileContent,
+  GetAllFilesData,
+} from "../service/techstak-api";
 
 export const FilesContext = createContext({
   files: [],
@@ -10,6 +14,7 @@ export const FilesProvider = ({ children }) => {
   const [files, setFiles] = useState([]);
   const [currentFile, setCurrentFile] = useState("");
   const [currentFileContent, setCurrentFileContent] = useState([]);
+  const [allFilesData, setAllFilesData] = useState([]);
 
   useEffect(() => {
     GetListFiles(setFiles);
@@ -27,12 +32,21 @@ export const FilesProvider = ({ children }) => {
     }
   }, [currentFile]);
 
+  const getRawData = () => {
+    setLoadingFileContent(true);
+    const serviceResponse = GetAllFilesData(setAllFilesData);
+    serviceResponse.then(() => setLoadingFileContent(false));
+    console.log(allFilesData);
+  };
+
   const value = {
     files,
     currentFile,
     setFile,
     currentFileContent,
     loadingFileContent,
+    allFilesData,
+    getRawData,
   };
 
   return (

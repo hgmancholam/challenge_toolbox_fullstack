@@ -1,4 +1,5 @@
 import { Container, Table, Alert, Badge } from "react-bootstrap";
+import "./file-content.styles.scss";
 
 function FileContent({ currentFile, fileData }) {
   const { file, lines } = fileData ?? { file: "", lines: {} };
@@ -7,7 +8,7 @@ function FileContent({ currentFile, fileData }) {
     return (
       <Container>
         <Alert key="danger" variant="danger">
-          File {currentFile} not found
+          File <b>{currentFile}</b> not found
         </Alert>
       </Container>
     );
@@ -15,11 +16,12 @@ function FileContent({ currentFile, fileData }) {
     return (
       <Container>
         <div>
-          <Alert key="secondary" variant="secondary">
-            <h2>
-              File data from: <Badge bg="secondary">{currentFile}</Badge>
-            </h2>
-            <span>File name not shown in columns</span>
+          <Alert key="secondary" variant="secondary" className="title-file">
+            <h3>
+              File data from: <b>{currentFile}</b>
+            </h3>
+            &nbsp;&nbsp;
+            <span>(File name not shown in columns)</span>
           </Alert>
         </div>
         {lines && lines.length > 0 ? (

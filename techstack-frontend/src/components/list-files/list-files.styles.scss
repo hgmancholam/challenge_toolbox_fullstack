@@ -4,3 +4,30 @@
   --bs-spinner-border-width: 1em !important;
   color: rgb(194, 168, 168) !important;
 }
+
+.titulo-list-files {
+  background-color: rgb(199, 0, 0);
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+  display: "inline" !important;
+  display: -moz-inline-stack !important;
+  display: inline-block !important;
+  *display: inline !important;
+
+  h2 {
+    display: "inline" !important;
+    display: -moz-inline-stack !important;
+    display: inline-block !important;
+    *display: inline !important;
+    margin-block-end: 0px;
+  }
+  span {
+    display: "inline" !important;
+    display: -moz-inline-stack !important;
+    display: inline-block !important;
+    *display: inline !important;
+    font-size: 0.8rem;
+  }
+}
