@@ -1,7 +1,10 @@
 # Toolbox OTT FullStack challenge Documentation
 
-This project is a solution proposed  for the challenge *[v3] Full Stack JS - Code Challenge*
+This project is a solution proposed  for the challenge **[v3] Full Stack JS - Code Challenge**
 
+It is composed by two differens projects:
+1. techstack-api: A project with an API using **NodeJs** and **ExpressJs** which serve all information in three services. 
+2. techstack-frontend: A project with front end in **ReactJs** and **React Boostrap**
 
 [Página de inicio](https://www.ejemplo.com)
 
