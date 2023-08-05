@@ -1,7 +1,7 @@
 # Toolbox OTT FullStack challenge
 [Página de inicio](https://www.ejemplo.com)
 
-![Logo](https://www.ejemplo.com/logo.png)
+![Toolbox OTT Fullstack Challenge](https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/rukbpvmwkvqpm0xcwioz)
 
 *Texto en cursiva* o _Texto en cursiva_
 **Texto en negrita** o __Texto en negrita__
