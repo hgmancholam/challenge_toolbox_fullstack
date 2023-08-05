@@ -1,9 +1,8 @@
 import { Fragment } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 import { ReactComponent as ToolboxLogo } from "../../assests/logo.svg";
 
@@ -31,24 +30,6 @@ const Navigation = () => {
       <Outlet />
     </Fragment>
   );
-
-  /*
-  return (
-    <Fragment>
-      <div className="navigation">
-        <Link className="logo-container" to="/">
-          <ToolboxLogo className="logo" />
-        </Link>
-        <div className="nav-links-container">
-          <Link className="nav-link" to="/listFiles">
-            FILES
-          </Link>
-        </div>
-      </div>
-      <Outlet />
-    </Fragment>
-  );
-  */
 };
 
 export default Navigation;

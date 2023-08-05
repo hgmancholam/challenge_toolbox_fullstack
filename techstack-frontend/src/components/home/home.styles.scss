@@ -1,0 +1,22 @@
+.titulo-home {
+  background-color: rgb(199, 0, 0) !important;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin: 5px 0px 5px 0px;
+}
+.container-home {
+  font-size: 1.2rem !important;
+}
+/* MailLink.css */
+.mail-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #007bff; /* Cambia el color del enlace según tu preferencia */
+}
+
+.mail-icon {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
