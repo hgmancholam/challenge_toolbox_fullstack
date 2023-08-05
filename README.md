@@ -1,5 +1,8 @@
-![Toolbox OTT Fullstack Challenge](https://images.crunchbase.com/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/rukbpvmwkvqpm0xcwioz)
 # Toolbox OTT FullStack challenge Documentation
+
+This project is a solution proposed  for the challenge *[v3] Full Stack JS - Code Challenge*
+
+
 [Página de inicio](https://www.ejemplo.com)
 
 
