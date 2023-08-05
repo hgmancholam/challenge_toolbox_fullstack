@@ -18,7 +18,6 @@ app.use(express.json());
 
 //http://localhost:3100/
 app.get("/", async (req, res) => {
-  console.log("test is successful!");
   res.status(200).json({ text: "test is successful!" });
 });
 
@@ -29,7 +28,6 @@ app.get("/files/listfiles", async (req, res) => {
       "https://echo-serv.tbxnet.com/v1/secret/files"
     );
     const response = await axios(options);
-    console.log(response.data);
     res.status(200).json(response.data);
   } catch (err) {
     res.status(500).json(err);

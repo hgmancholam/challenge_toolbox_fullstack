@@ -91,6 +91,10 @@ Now, we are goint to put special attention in the following objects:
 
 Make sure you have Node.js and npm (Node Package Manager) installed on your system. If you don't have them installed, you can download them from [nodejs.org](https://nodejs.org/).
 
+> Be sure you are using Node version 14. Exactly i used Node v14.21.3
+> Once you have installed  the correct version, you can use this command line to set the correct version of Node:
+>       __nvm use 14.21.3__ 
+
 <span style="color:#F7FE2E"> __Now, we agre goint to install all needed packages to run our projects__</span>
 
 ---
