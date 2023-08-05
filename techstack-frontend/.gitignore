@@ -1,16 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-techstack-api/node_modules
-techstack-frontend/node_modules
-techstack-frontend/.pnp
+/node_modules
+/.pnp
 .pnp.js
 
 # testing
-techstack-frontend/coverage
+/coverage
 
 # production
-techstack-frontend/build
+/build
 
 # misc
 .DS_Store
